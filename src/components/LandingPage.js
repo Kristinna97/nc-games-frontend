@@ -3,6 +3,7 @@ import { fetchReviews } from "../api";
 import ReviewCard from "./ReviewCard";
 import { Link } from "react-router-dom";
 import styles from './LandingPage.module.css'
+import spinner from '../spinner.png'
 const LandingPage = ({isLoading, setLoading}) => {
 
 const [reviews , setReviews]  = useState([])
@@ -16,7 +17,12 @@ useEffect(() => {
 },[])
 
 if(isLoading){
-        return<p>loading...</p>
+        return(
+        <>
+        <img src={spinner} className={styles.spinner} alt="spinner" />
+        <p>loading...</p>
+        </>
+        )
 }
 return(
   
@@ -28,10 +34,11 @@ return(
    
         </ul>
         <Link
-                className="links"
+                className={styles.links}
                 to={`/reviews`}
                 key="all-reviews"
-              ><button>All reviews</button></Link> 
+              >
+                <button className={styles.allRevBtn}>ALL REVIEWS</button></Link> 
         
         </section>
 )

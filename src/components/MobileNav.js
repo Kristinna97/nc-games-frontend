@@ -6,8 +6,7 @@ const MobileNav = ({ categories }) => {
   const navigate = useNavigate();
 
   const handleClick = (event) => {
-    console.log(event.target.value);
-    navigate(`/${event.target.value}`);
+    navigate(`/reviews/${event.target.value}`);
   };
 
   return (
@@ -19,8 +18,8 @@ const MobileNav = ({ categories }) => {
         <Link className={styles.links} to={`/reviews`} key="all-reviews">
           ALL REVIEWS
         </Link>
-
         <select onChange={(event) => handleClick(event)}>
+        <option value="" selected disabled hidden>Choose category</option>
           {categories.map((category) => {
             return (
               <option value={category.slug} key={category.slug}>

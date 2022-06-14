@@ -5,8 +5,8 @@ export const fetchCategories =  () => {
        return response.data
     })
 }
-export const fetchReviews=  () => {
-    return axios.get("https://northcoders-nc-games.herokuapp.com/api/reviews").then((response) =>{
-       return response.data
+export const fetchReviews=  (category) => {
+    return axios.get("https://northcoders-nc-games.herokuapp.com/api/reviews",{params: {category}}).then((response) =>{
+    return response.data
     })
 }
