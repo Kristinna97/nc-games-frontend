@@ -1,7 +1,18 @@
 .navbar{
-
+ display: none;
 }
 
 .links{
-    padding: 5px;;
+    padding: 5px;
+    text-decoration: none;
+    
 }
+
+@media (min-width: 600px) {
+ .navbar{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+
+ }
+    }

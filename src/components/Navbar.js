@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchCategories } from "../api";
+import MobileNav from './MobileNav.js'
 import styles from './Navbar.module.css'
 const Navbar = () =>{
 
@@ -12,8 +13,14 @@ const Navbar = () =>{
         });
       }, []);
 
-      return (
+      return (<>
+        <MobileNav categories={categories} />
         <ul className={styles.navbar}>
+            <Link
+                className={styles.links}
+                to={`/`}
+                key="home"
+              >HOME</Link> 
             <Link
                 className={styles.links}
                 to={`/reviews`}
@@ -31,6 +38,7 @@ const Navbar = () =>{
             );
           })}
         </ul>
+        </>
       );
 
 }
