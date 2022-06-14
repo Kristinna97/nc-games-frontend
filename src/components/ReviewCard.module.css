@@ -1,0 +1,29 @@
+.review_img {
+    width: 50%;
+    height: 150px;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.review_card{
+    width: 30%;
+    height: 250px;  
+    margin:0;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin:5px;
+}
+
+.review_info{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+    .review_card{
+        width: 90%;  
+       
+    }
+    }

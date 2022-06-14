@@ -1,0 +1,14 @@
+.mobile_nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #98C5E9;
+    margin:0;
+    padding:10px 10px 10px 20px;
+    
+}
+
+@media (min-width: 600px) {
+    .mobile_nav{
+       display: none;
+    }
+       }
