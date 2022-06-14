@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchReviews } from "../api";
 import ReviewCard from "./ReviewCard";
 import styles from "./Reviews.module.css";
+import Loading from "./Loading";
 const Reviews = ({ isLoading, setLoading }) => {
   const [reviews, setReviews] = useState([]);
 
@@ -16,9 +17,9 @@ const Reviews = ({ isLoading, setLoading }) => {
     });
   }, [category]);
 
-  if (isLoading) {
-    return <p>loading...</p>;
-  }
+  if(isLoading){
+    return  <Loading/>
+}
   return (
     <section>
       <ul className={styles.reviews_list}>
