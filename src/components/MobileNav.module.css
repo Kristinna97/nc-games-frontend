@@ -1,0 +1,11 @@
+.mobile_nav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@media (min-width: 600px) {
+    .mobile_nav{
+       display: none;
+    }
+       }
