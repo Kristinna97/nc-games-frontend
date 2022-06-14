@@ -40,6 +40,9 @@ const SingleReview = ({ isLoading, setLoading }) => {
          </span>
           <p className={styles.postedBy}>Posted by: {review.owner}</p>
           <p>{review.review_body}</p>
+          <p className={styles.comments}><span class="material-symbols-outlined">
+forum
+</span> {review.comment_count}</p>
         </div>
       </div>
     </section>
