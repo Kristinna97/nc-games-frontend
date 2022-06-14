@@ -30,7 +30,7 @@ const Navbar = () =>{
             return (
               <Link
                 className={styles.links}
-                to={`/${category.slug}`}
+                to={`/reviews/${category.slug}`}
                 key={category.slug}
               >
                 {(category.slug.replaceAll('-', " ")).toUpperCase()}

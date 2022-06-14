@@ -15,6 +15,7 @@ function App() {
        <Routes>
         <Route path="/" element={<LandingPage  setLoading={setLoading} isLoading={isLoading}/>}/>
         <Route path="/reviews" element={<Reviews  setLoading={setLoading} isLoading={isLoading}/>}/>
+        <Route path="/reviews/:category" element={<Reviews  setLoading={setLoading} isLoading={isLoading}/>}/>
        </Routes>
 
     </div>
