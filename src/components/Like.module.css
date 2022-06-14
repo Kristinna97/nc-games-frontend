@@ -1,0 +1,7 @@
+.likes{
+    border-bottom: 2px solid transparent;
+}
+.likes:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #F4BC46;
+}
