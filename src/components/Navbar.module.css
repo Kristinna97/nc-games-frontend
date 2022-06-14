@@ -1,10 +1,16 @@
 .navbar{
  display: none;
+ background-color: #98C5E9;
+ margin:0;
+ padding:10px 10px 10px 20px;
+
 }
 
 .links{
     padding: 5px;
     text-decoration: none;
+    color: #0055AF;
+    font-size: 1rem;
     
 }
 
