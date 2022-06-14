@@ -27,26 +27,7 @@
     cursor: pointer;
 }
 
-.spinner{
-    
-    width: 80px;
-    height: 80px;
-    margin-top: 20%;
-}
-@media (prefers-reduced-motion: no-preference) {
-    .spinner {
-      animation: App-logo-spin infinite 0.8s linear;
-    }
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+
 @media (max-width: 600px) {
     .reviews_list{
         

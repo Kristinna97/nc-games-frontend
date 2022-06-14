@@ -6,7 +6,7 @@ const MobileNav = ({ categories }) => {
   const navigate = useNavigate();
 
   const handleClick = (event) => {
-    navigate(`/reviews/${event.target.value}`);
+    navigate(`/reviews/category/${event.target.value}`);
   };
 
   return (

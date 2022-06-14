@@ -39,6 +39,20 @@
     display: flex;
 
 }
+.viewMore{
+    color: white;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.viewMore:hover{
+
+    color: #00285E;
+ 
+  
+}
 
 @media (max-width: 600px) {
     .review_card{

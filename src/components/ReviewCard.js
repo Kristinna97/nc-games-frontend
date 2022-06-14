@@ -1,4 +1,5 @@
 import styles from "./ReviewCard.module.css";
+import { Link } from "react-router-dom";
 const ReviewCard = ({ review }) => {
   return (
     <div className={styles.review_card}>
@@ -16,6 +17,13 @@ const ReviewCard = ({ review }) => {
             {review.votes}
           </span>
         </p>
+        <Link
+          className={styles.links}
+          to={`/reviews/${review.review_id}`}
+          key="view more"
+        >
+          <button className={styles.viewMore}>View more {">>"} </button>
+        </Link>
       </div>
     </div>
   );
