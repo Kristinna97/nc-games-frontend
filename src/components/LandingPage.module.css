@@ -2,12 +2,51 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0;
    
     
 }
 .reviews{
     margin: 0% 7% 
 }
+
+.allRevBtn {
+   margin-left: 80%;
+   padding: 10px 20px;
+   color:  #00285E;
+   font-weight: bold;
+   background-color: #F4BC46;
+   border:none;
+   border-radius: 5px;
+}
+
+
+.allRevBtn:hover{
+    background-color: #f1c667;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.spinner{
+    
+    width: 80px;
+    height: 80px;
+    margin-top: 20%;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .spinner {
+      animation: App-logo-spin infinite 0.8s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 @media (max-width: 600px) {
     .reviews_list{
         
