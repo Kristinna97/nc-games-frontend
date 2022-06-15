@@ -15,3 +15,8 @@ export const fetchReviewsById =  (id) => {
     return response.data
     })
 }
+export const increaseVotes =  (id, inc_votes) => {
+    return axios.patch(`https://northcoders-nc-games.herokuapp.com/api/reviews/${id}`,{inc_votes}).then((response) =>{
+    return response.data
+    })
+}

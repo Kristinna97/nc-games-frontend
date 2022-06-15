@@ -1,4 +1,5 @@
 import styles from "./ReviewCard.module.css";
+import Like from "./Like";
 import { Link } from "react-router-dom";
 const ReviewCard = ({ review }) => {
   return (
@@ -12,10 +13,7 @@ const ReviewCard = ({ review }) => {
         <h3 className={styles.title}>{review.title}</h3>
         <p className={styles.review_info}>
           <span>{new Date(review.created_at).toLocaleDateString("en-GB")}</span>
-          <span className={styles.likes}>
-            <span className="material-symbols-rounded">favorite</span>
-            {review.votes}
-          </span>
+        <Like votes={review.votes} id={review.review_id}/>
         </p>
         <Link
           className={styles.links}
