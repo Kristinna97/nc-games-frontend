@@ -7,7 +7,7 @@ import styles from "./CommentList.module.css";
 const CommentsList = ({ review_id }) => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState(0);
-
+  console.log(review_id)
   useEffect(() => {
     fetchComments(review_id).then((data) => {
       setComments(data.comments);
@@ -19,7 +19,7 @@ const CommentsList = ({ review_id }) => {
       <>
         {" "}
         <h4 className={styles.noComments}>No comments for this post yet :( </h4>
-        <CommentForm />
+        <CommentForm review_id={review_id}  setNewComment={setNewComment} />
       </>
     );
   } else {

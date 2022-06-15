@@ -7,7 +7,7 @@ const CommentForm = ({ review_id, setNewComment }) => {
   const [commentText, setCommentText] = useState("");
   const { user } = useContext(UserContext);
   const [posted, setPosted] = useState(false);
-
+ console.log(review_id)
   const handleSubmit = (event) => {
     event.preventDefault();
 
