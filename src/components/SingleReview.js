@@ -38,10 +38,6 @@ const SingleReview = ({ isLoading, setLoading }) => {
             <Like id={review.review_id} votes={review.votes} />
             <p className={styles.postedBy}>Posted by: {review.owner}</p>
             <p>{review.review_body}</p>
-            <p className={styles.comments}>
-              <span className="material-symbols-outlined">forum</span>{" "}
-              {review.comment_count}
-            </p>
             <CommentsList review_id={review_id}/>
           </div>
         </div>
