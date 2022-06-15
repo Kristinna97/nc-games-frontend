@@ -20,3 +20,9 @@ export const increaseVotes =  (id, inc_votes) => {
     return response.data
     })
 }
+
+export const fetchComments =  (id) => {
+    return axios.get(`https://northcoders-nc-games.herokuapp.com/api/reviews/${id}/comments`).then((response) =>{
+    return response.data
+    })
+}

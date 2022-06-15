@@ -21,12 +21,12 @@ const Like = ({ id, votes }) => {
   return (
     <span className={styles.likes}>
       {" "}
-      <span class="material-symbols-outlined" onClick={handleClickUp}>
+      <span className="material-symbols-outlined" onClick={handleClickUp}>
         thumb_up
       </span>
      
      <span className={styles.votes}> {votes + updatedVotes} </span>
-      <span class="material-symbols-outlined" onClick={handleClickDown}>
+      <span className="material-symbols-outlined" onClick={handleClickDown}>
         thumb_down
       </span>
     </span>
