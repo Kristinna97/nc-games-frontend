@@ -4,23 +4,31 @@ import { increaseVotes } from "../api";
 const Like = ({ id, votes }) => {
   const [updatedVotes, setUpdatedVotes] = useState(0);
 
-  const handleClick = () => {
-    increaseVotes(id, 1)
-      .then((data) => {
-        setUpdatedVotes((currentVotes) => currentVotes + 1);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  const handleClickUp = () => {
+    setUpdatedVotes((currentVotes) => currentVotes + 1);
+    increaseVotes(id, 1).catch(() => {
+      setUpdatedVotes((currentVotes) => currentVotes - 1);
+    });
+  };
+
+  const handleClickDown = () => {
+    setUpdatedVotes((currentVotes) => currentVotes - 1);
+    increaseVotes(id, 1).catch(() => {
+      setUpdatedVotes((currentVotes) => currentVotes + 1);
+    });
   };
 
   return (
     <span className={styles.likes}>
       {" "}
-      <span className="material-symbols-rounded" onClick={handleClick}>
-        favorite
+      <span class="material-symbols-outlined" onClick={handleClickUp}>
+        thumb_up
       </span>
-      {votes + updatedVotes}
+     
+     <span className={styles.votes}> {votes + updatedVotes} </span>
+      <span class="material-symbols-outlined" onClick={handleClickDown}>
+        thumb_down
+      </span>
     </span>
   );
 };

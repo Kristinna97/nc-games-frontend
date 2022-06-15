@@ -3,11 +3,12 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0;
+
    
     
 }
 .reviews{
-    margin: 0% 7% 
+    margin: 2% 7% 
 }
 
 .allRevBtn {
