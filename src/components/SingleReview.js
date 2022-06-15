@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchReviewsById } from "../api";
 import Loading from "./Loading";
+import CommentsList from "./CommentsList";
 import Like from "./Like";
 import styles from "./SingleReview.module.css";
 
@@ -38,9 +39,10 @@ const SingleReview = ({ isLoading, setLoading }) => {
             <p className={styles.postedBy}>Posted by: {review.owner}</p>
             <p>{review.review_body}</p>
             <p className={styles.comments}>
-              <span class="material-symbols-outlined">forum</span>{" "}
+              <span className="material-symbols-outlined">forum</span>{" "}
               {review.comment_count}
             </p>
+            <CommentsList review_id={review_id}/>
           </div>
         </div>
       </section>

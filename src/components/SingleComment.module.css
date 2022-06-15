@@ -1,0 +1,27 @@
+.comment{
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.author, .body{
+    display: flex;
+    justify-self: flex-start;
+    padding:0px 10px;
+}
+
+.author{
+    border-bottom: 1px solid rgb(214, 211, 211);
+    padding-bottom: 5px;
+}
+
+.username{
+    margin-left: 10px;
+}
+
+.date{
+    display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
