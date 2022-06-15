@@ -13,7 +13,7 @@ const Like = ({ id, votes }) => {
 
   const handleClickDown = () => {
     setUpdatedVotes((currentVotes) => currentVotes - 1);
-    increaseVotes(id, 1).catch(() => {
+    increaseVotes(id, -1).catch(() => {
       setUpdatedVotes((currentVotes) => currentVotes + 1);
     });
   };
