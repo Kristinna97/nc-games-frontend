@@ -1,0 +1,64 @@
+.form{
+    width:80%;
+     margin-right: 16px; 
+    padding-left: 40px;
+}
+
+.textarea{
+    width:80%;
+    height: 70px;
+    padding : 0;
+}
+
+.textarea:placeholder-shown{
+    padding:15px;
+}
+
+.send{
+    margin-left: 20px;
+    margin-bottom: 21px;
+    padding: 2px 15px;
+  
+}
+
+.send:hover{
+    background-color: #218838;
+    color:white;
+    border-color: transparent;
+}
+.noUser{
+    border-bottom: 1px solid rgb(214, 211, 211);
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 5px
+}
+.successMsg{
+    font-size: 0.9rem;
+    color: green;
+    margin-right: 55%;
+}
+@media (max-width: 600px) {
+    
+    .form{
+        width:100%;
+        margin-right: 0px; 
+        padding-left: 5px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    
+    .textarea{
+        width:50%;
+        height: 50px;
+        padding : 0;
+        margin-left:13px;
+    }
+    .send{
+        margin-left: 10px;
+        margin-bottom: 21px;
+       padding: 0px 15px;
+      
+    }
+    
+    }

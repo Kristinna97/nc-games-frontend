@@ -1,5 +1,6 @@
 .comment_list{
 list-style: none;
+padding: 0px 20px;
 }
 
 .noComments{
@@ -7,4 +8,14 @@ list-style: none;
     display: flex;
     justify-content: flex-start;
     padding-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    
+    .comment_list{
+        margin-top:10px;
+        padding: 0px 20px;
+        }
+        
+  
 }
