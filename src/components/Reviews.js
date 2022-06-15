@@ -4,9 +4,9 @@ import { fetchReviews } from "../api";
 import ReviewCard from "./ReviewCard";
 import styles from "./Reviews.module.css";
 import Loading from "./Loading";
-const Reviews = ({ isLoading, setLoading }) => {
+const Reviews = () => {
   const [reviews, setReviews] = useState([]);
-
+  const [isLoading, setLoading] = useState(true);
   const { category } = useParams();
   
   useEffect(() => {

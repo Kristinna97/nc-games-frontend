@@ -26,3 +26,14 @@ export const fetchComments =  (id) => {
     return response.data
     })
 }
+
+export const postComment =  (id, username,text) => {
+   const  options = {
+        username : username,
+        body :text
+    }
+    // console.log(id)
+    return axios.post(`https://northcoders-nc-games.herokuapp.com/api/reviews/${id}/comments`,options).then((response) =>{
+    return response.data
+    })
+}
