@@ -9,12 +9,13 @@ const CommentForm = ({ review_id, setNewComment }) => {
   const [posted, setPosted] = useState(false);
 
   const handleSubmit = (event) => {
-    setPosted(true);
     event.preventDefault();
-    postComment(review_id, user.username, commentText).then(() => {
-      setNewComment((current) => current + 1);
-    });
 
+    setPosted(true);
+    
+    postComment(review_id, user.username, commentText).then(() =>{
+        setNewComment((current) => current + 1);
+    })
     setCommentText("");
   };
 

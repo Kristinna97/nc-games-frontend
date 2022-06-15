@@ -9,7 +9,7 @@ import LandingPage from "./components/LandingPage";
 import { UserContext } from "./context/userContext";
 
 function App() {
-  const [isLoading, setLoading] = useState(true);
+
   const [user, setUser] = useState( {
     username: 'grumpy19',
     name: 'Paul Grump',
@@ -22,10 +22,10 @@ function App() {
       <Header/>
        <Navbar/>
        <Routes>
-        <Route path="/" element={<LandingPage  setLoading={setLoading} isLoading={isLoading}/>}/>
-        <Route path="/reviews" element={<Reviews  setLoading={setLoading} isLoading={isLoading}/>}/>
-        <Route path="/reviews/category/:category" element={<Reviews  setLoading={setLoading} isLoading={isLoading}/>}/>
-        <Route path="/reviews/:review_id" element={<SingleReview  setLoading={setLoading} isLoading={isLoading}/>}/>
+        <Route path="/" element={<LandingPage />}/>
+        <Route path="/reviews" element={<Reviews  />}/>
+        <Route path="/reviews/category/:category" element={<Reviews />}/>
+        <Route path="/reviews/:review_id" element={<SingleReview  />}/>
        </Routes>
 
     </div>

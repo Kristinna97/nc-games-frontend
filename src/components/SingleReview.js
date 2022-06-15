@@ -6,9 +6,10 @@ import CommentsList from "./CommentsList";
 import Like from "./Like";
 import styles from "./SingleReview.module.css";
 
-const SingleReview = ({ isLoading, setLoading }) => {
+const SingleReview = () => {
   const { review_id } = useParams();
   const [review, setReview] = useState();
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);

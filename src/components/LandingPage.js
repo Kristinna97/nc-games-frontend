@@ -5,9 +5,10 @@ import Loading from "./Loading";
 import { Link } from "react-router-dom";
 import styles from './LandingPage.module.css'
 
-const LandingPage = ({isLoading, setLoading}) => {
+const LandingPage = () => {
 
 const [reviews , setReviews]  = useState([])
+const [isLoading, setLoading] = useState(true);
 
 useEffect(() => {
     fetchReviews().then(({reviews}) => {
