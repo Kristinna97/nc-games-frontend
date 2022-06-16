@@ -4,6 +4,7 @@ import ReviewCard from "./ReviewCard";
 import Loading from "./Loading";
 import { Link } from "react-router-dom";
 import styles from './LandingPage.module.css'
+import React  from 'react';
 
 const LandingPage = () => {
 

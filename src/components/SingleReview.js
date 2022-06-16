@@ -5,6 +5,7 @@ import Loading from "./Loading";
 import CommentsList from "./CommentsList";
 import Like from "./Like";
 import styles from "./SingleReview.module.css";
+import React from 'react';
 
 const SingleReview = () => {
   const { review_id } = useParams();

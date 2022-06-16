@@ -1,4 +1,5 @@
 import styles from "./SingleComment.module.css";
+import React from 'react';
 const SingleComment = ({ comment }) => {
   return (
     <li className={styles.comment}>

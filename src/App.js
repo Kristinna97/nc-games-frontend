@@ -7,6 +7,7 @@ import { useState } from "react";
 import './App.css';
 import LandingPage from "./components/LandingPage";
 import { UserContext } from "./context/userContext";
+import React from 'react';
 
 function App() {
 

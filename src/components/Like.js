@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Like.module.css";
 import { increaseVotes } from "../api";
+import React  from 'react';
 const Like = ({ id, votes }) => {
   const [updatedVotes, setUpdatedVotes] = useState(0);
 
