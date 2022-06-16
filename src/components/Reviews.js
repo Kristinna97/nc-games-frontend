@@ -15,8 +15,6 @@ const Reviews = () => {
                   order: searchParams.get("order")}
 
   const { category } = useParams();
-
-
   useEffect(() => {
     setLoading(true);
     fetchReviews(category, params).then(({ reviews }) => {

@@ -24,8 +24,8 @@ function App() {
        <Navbar/>
        <Routes>
         <Route path="/" element={<LandingPage />}/>
-        <Route path="/reviews" element={<Reviews  />}/>
-        <Route path="/reviews/category/:category" element={<Reviews />}/>
+        <Route path="/reviews" element={<Reviews  />}/>     
+        <Route path="/reviews/category/:category" element={<Reviews  />}/>     
         <Route path="/reviews/:review_id" element={<SingleReview  />}/>
        </Routes>
 
