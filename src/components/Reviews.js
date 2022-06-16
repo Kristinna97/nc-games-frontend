@@ -30,7 +30,8 @@ const Reviews = () => {
 }
   return (
     <section>
-      <SortingMenu/>
+      <div className={styles.sorting}><SortingMenu /></div>
+      
       <ul className={styles.reviews_list}>
         {reviews.map((review) => {
           return <ReviewCard review={review} key={review.review_id} />;
