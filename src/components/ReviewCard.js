@@ -1,6 +1,7 @@
 import styles from "./ReviewCard.module.css";
 import Like from "./Like";
 import { Link } from "react-router-dom";
+import React from 'react';
 const ReviewCard = ({ review }) => {
   return (
     <div className={styles.review_card}>

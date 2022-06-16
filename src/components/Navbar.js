@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { fetchCategories } from "../api";
 import MobileNav from './MobileNav.js'
 import styles from './Navbar.module.css'
+import React  from 'react';
 const Navbar = () =>{
 
     const [categories, setCategories] = useState([]);

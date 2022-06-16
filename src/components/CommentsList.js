@@ -3,11 +3,12 @@ import { fetchComments } from "../api";
 import SingleComment from "./SingleComment";
 import CommentForm from "./CommentForm";
 import styles from "./CommentList.module.css";
+import React from 'react';
 
 const CommentsList = ({ review_id }) => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState(0);
-  console.log(review_id)
+ 
   useEffect(() => {
     fetchComments(review_id).then((data) => {
       setComments(data.comments);

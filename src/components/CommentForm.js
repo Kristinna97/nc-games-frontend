@@ -2,12 +2,13 @@ import { useState, useContext } from "react";
 import { postComment } from "../api";
 import { UserContext } from "../context/userContext";
 import styles from "./CommentForm.module.css";
+import React from 'react';
 
 const CommentForm = ({ review_id, setNewComment }) => {
   const [commentText, setCommentText] = useState("");
   const { user } = useContext(UserContext);
   const [posted, setPosted] = useState(false);
- console.log(review_id)
+
   const handleSubmit = (event) => {
     event.preventDefault();
 

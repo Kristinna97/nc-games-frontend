@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import { UserContext } from "../context/userContext";
 import { useContext } from "react";
+import React  from 'react';
 const Header = () => {
   const { user } = useContext(UserContext);
 
@@ -8,7 +9,7 @@ const Header = () => {
     return (
       <>
         <header className={styles.header}>
-          <img className={styles.logo} src={require("../logo.png")}></img>
+          <img className={styles.logo} src={require("../logo.png")} alt="logo"></img>
 
           <p className={styles.loggedInUser}>
             <span className="material-symbols-outlined">account_circle</span>{" "}
@@ -21,7 +22,7 @@ const Header = () => {
     return (
       <>
         <div className={styles.header}>
-          <img className={styles.logo} src={require("../logo.png")}></img>
+          <img className={styles.logo} src={require("../logo.png")} alt="logo"></img>
           <h1 className={styles.title}> NC Games</h1>
         </div>
       </>
