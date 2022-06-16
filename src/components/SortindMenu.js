@@ -8,7 +8,7 @@ const SortingMenu = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="success">Sort:</Dropdown.Toggle>
+      <Dropdown.Toggle variant="success">Sort By:</Dropdown.Toggle>
       <Dropdown.Menu>
         <Dropdown.Item
           onClick={() => setSearchParams({ sort_by: "created_at" })}
