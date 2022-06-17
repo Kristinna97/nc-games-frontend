@@ -48,7 +48,7 @@
 .successMsg{
     font-size: 0.9rem;
     color: green;
-    margin-right: 55%;
+    margin:auto;
 }
 
 @media (max-width: 600px) {
