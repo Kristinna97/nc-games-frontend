@@ -5,8 +5,7 @@ export const fetchCategories =  () => {
        return response.data
     })
 }
-export const fetchReviews=  (category,params) => {
-  
+export const fetchReviews=  (category,params) => {  
     if(category){
         params.category = category;
     }
@@ -39,4 +38,8 @@ export const postComment =  (id, username,text) => {
     return axios.post(`https://northcoders-nc-games.herokuapp.com/api/reviews/${id}/comments`,options).then((response) =>{
     return response.data
     })
+}
+
+export const deleteComment = (id) =>{
+    return axios.delete(`https://northcoders-nc-games.herokuapp.com/api/comments/${id}`)
 }

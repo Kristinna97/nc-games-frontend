@@ -13,11 +13,20 @@
 
 .author{
     border-bottom: 1px solid rgb(214, 211, 211);
-    padding-bottom: 5px;
+    padding: 5px 10px;
+    display: flex;
+        justify-content: space-between;
 }
 
 .username{
     margin-left: 10px;
+    margin-right: 75%;
+    margin-top: 5px;;
+}
+
+.icon{
+    display:flex;
+    
 }
 
 .date{
@@ -25,3 +34,17 @@
   justify-content: flex-end;
   margin-right: 10px;
 }
+
+@media (max-width: 600px) {
+    
+    .username{
+        margin-left: 10px;
+        margin-right: 50%;
+       
+    }
+    .author{
+        border-bottom: 1px solid rgb(214, 211, 211);
+        padding: 5px 10px;
+       
+    }
+       }
