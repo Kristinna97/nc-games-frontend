@@ -9,12 +9,17 @@ const CommentsList = ({ review_id }) => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState(0);
   const [deletedComment, setDeletedComment] = useState(0);
+  const [deleted, setDeleted] = useState(false);
  
   useEffect(() => {
     fetchComments(review_id).then((data) => {
       setComments(data.comments.reverse());
     });
   }, [review_id, newComment ,deletedComment]);
+
+  setTimeout(() => {
+    setDeleted(false);
+  }, "5000");
 
   if (comments.length === 0) {
     return (
@@ -28,9 +33,10 @@ const CommentsList = ({ review_id }) => {
     return (
       <>
         <CommentForm review_id={review_id} setNewComment={setNewComment} />
+        {deleted? <p className={styles.deleteMsg}>Comment  deleted  successfully!</p> : <p className={styles.noMsg}>...</p>}
         <ul className={styles.comment_list}>
           {comments.map((comment) => {
-            return <SingleComment comment={comment} key={comment.body} setDeletedComment={setDeletedComment}/>;
+            return <SingleComment comment={comment} key={comment.body} setDeletedComment={setDeletedComment} setDeleted={setDeleted}/>;
           })}
         </ul>
       </>

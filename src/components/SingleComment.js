@@ -4,7 +4,7 @@ import DeleteComment from "./DeleteComment";
 import { UserContext } from "../context/userContext";
 import { useContext } from "react";
 
-const SingleComment = ({ comment , setDeletedComment}) => {
+const SingleComment = ({ comment , setDeletedComment, setDeleted}) => {
 
   const { user } = useContext(UserContext);
 
@@ -16,7 +16,7 @@ const SingleComment = ({ comment , setDeletedComment}) => {
        <span className={styles.username}>{comment.author}</span> </div>
        <div className={styles.deleteBtn}>
        {comment.author === user.username ?
-       <DeleteComment comment_id = {comment.comment_id} setDeletedComment={setDeletedComment}/> :null}
+       <DeleteComment comment_id = {comment.comment_id} setDeletedComment={setDeletedComment} setDeleted={setDeleted}/> :null}
        </div>
       </p>     
        
