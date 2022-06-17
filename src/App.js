@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import Navbar from "./components/Navbar";
 import Reviews from "./components/Reviews";
 import SingleReview from './components/SingleReview'
+import ErrorPage from "./components/ErrorPage";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import './App.css';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/reviews" element={<Reviews  />}/>     
         <Route path="/reviews/category/:category" element={<Reviews  />}/>     
         <Route path="/reviews/:review_id" element={<SingleReview  />}/>
+        <Route path="*" element={<ErrorPage />}/>
        </Routes>
 
     </div>

@@ -1,0 +1,22 @@
+.error{
+    margin-top:10%;
+    margin-bottom: 20px;
+}
+
+.errorBtn{
+  
+    padding: 10px 20px;
+    color:  #00285E;
+    font-weight: bold;
+    background-color: #F4BC46;
+    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.errorBtn:hover{
+    background-color: #e9c67b;
+    transition: 1s;
+    cursor: pointer;
+    color:#00285E;
+}
