@@ -1,6 +1,9 @@
 .comment_list{
 list-style: none;
 padding: 0px 20px;
+margin-left: 16px;
+margin-right: 16px;
+
 }
 
 .noComments{
@@ -8,6 +11,7 @@ padding: 0px 20px;
     display: flex;
     justify-content: flex-start;
     padding-bottom: 5px;
+    margin-left:3%;
 }
 
 .deleteMsg{

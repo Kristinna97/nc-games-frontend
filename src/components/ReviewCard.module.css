@@ -53,6 +53,12 @@
   
 }
 
+@media (max-width: 900px) {
+    .review_card{
+        width: 45%;  
+       
+    }
+    }
 @media (max-width: 600px) {
     .review_card{
         width: 90%;  

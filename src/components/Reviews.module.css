@@ -9,4 +9,15 @@
 
 .sorting{
     margin-left: 75%;
+    
 }
+
+@media (max-width: 900px) {
+    
+    .sorting{
+        margin-top:3%;
+        margin-right: 6%;
+    }
+  
+}
+

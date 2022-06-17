@@ -39,7 +39,7 @@ const SingleReview = () => {
           <div className={styles.reviewInfo}>
             <Like id={review.review_id} votes={review.votes} />
             <p className={styles.postedBy}>Posted by: {review.owner}</p>
-            <p>{review.review_body}</p>
+            <p className={styles.body}>{review.review_body}</p>
             <CommentsList review_id={review_id}/>
           </div>
         </div>

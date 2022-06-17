@@ -35,6 +35,10 @@ h2{
     margin-right: 80%;
     background-color: aqua;
 }
+.body{
+    margin:0 3% 3% 3%;
+   
+}
 
 .comments{
     margin-left: 80%;
