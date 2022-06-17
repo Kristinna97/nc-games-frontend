@@ -16,6 +16,7 @@ const SortingMenu = () => {
           Newest Reviews
         </Dropdown.Item>
         <Dropdown.Item
+         
           onClick={() =>
             setSearchParams({ sort_by: "created_at", order: "asc" })
           }

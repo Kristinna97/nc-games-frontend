@@ -24,31 +24,10 @@ const CommentForm = ({ review_id, setNewComment }) => {
     setPosted(false);
   }, "5000");
 
-  if (posted) {
-    return (
-      <>
-        {" "}
-        <p className={styles.successMsg}>Comment  posted  successfully!</p>
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <textarea
-            placeholder="Write a new comment..."
-            className={styles.textarea}
-            required
-            onChange={(event) => setCommentText(event.target.value)}
-            value={commentText}
-          ></textarea>
-          <button className={styles.send}>
-            <span className="material-symbols-outlined">send</span>
-          </button>
-        </form>
-       
-      </>
-    );
-  }
-
   if (user) {
     return (
       <>
+       {posted ? <p className={styles.successMsg}>Comment  posted  successfully!</p> : <p className={styles.noMsg}>...</p>}
         <form onSubmit={handleSubmit} className={styles.form}>
           <textarea
             placeholder="Write a new comment..."

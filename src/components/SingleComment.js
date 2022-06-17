@@ -11,10 +11,13 @@ const SingleComment = ({ comment , setDeletedComment}) => {
   return (
     <li className={styles.comment}>
       <p className={styles.author}>
+        <div className={styles.icon}>
       <span className="material-symbols-outlined">account_circle</span>
-       <span className={styles.username}>{comment.author}</span> 
+       <span className={styles.username}>{comment.author}</span> </div>
+       <div className={styles.deleteBtn}>
        {comment.author === user.username ?
        <DeleteComment comment_id = {comment.comment_id} setDeletedComment={setDeletedComment}/> :null}
+       </div>
       </p>     
        
       <p className={styles.body}>{comment.body}</p>
