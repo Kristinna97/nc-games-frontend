@@ -5,10 +5,10 @@ This is the Front End project of the Northcoders Bootcamp. It is a React app whi
 ## Tech Stack
 <br>
 <div display="flex" >
-<img src="./icons/js.png" alt="JavaScript" width="40" />
-<img src="./icons/express.png" alt="Express" width="40" />
-<img src="./icons/postgresql.png" alt="PostgresQl" width="40"/>
-<img src="./icons/jest.png" alt="Jest" width="40"/>
+<img src="./src/icons/js.png" alt="JavaScript" width="60" />
+<img src="./src/icons/axios.png" alt="Axios" width="60" />
+<img src="./src/icons/react.png" alt="React" width="60" />
+
 <div>
 <br>
 
